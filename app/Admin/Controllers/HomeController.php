@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Admin\Controllers;
+namespace App\UNIVERSITAS\Controllers;
 
 use App\Http\Controllers\Controller;
-use Encore\Admin\Controllers\Dashboard;
-use Encore\Admin\Layout\Column;
-use Encore\Admin\Layout\Content;
-use Encore\Admin\Layout\Row;
+use Encore\UNIVERSITAS\Controllers\Dashboard;
+use Encore\UNIVERSITAS\\Column;
+use Encore\UNIVERSITAS\Content;
+use Encore\UNIVERSITAS\Layout\Row;
 
 class HomeController extends Controller
 {
