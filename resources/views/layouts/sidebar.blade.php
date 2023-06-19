@@ -25,26 +25,26 @@
     </li>
 
     <li class="nav-item active">
-        <a class="nav-link" href="">
+        <a class="nav-link active" href="">
             <i class="fas fa-list-ul"></i>
             <span>Pengajuan Izin Kerja Sama</span></a>
     </li>
 
     <li class="nav-item active">
         <a class="nav-link" href="">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <i class="fas fa-fw fa-address-book"></i>
             <span>Pelaporan Pelaksanaan Kerja Sama</span></a>
     </li>
 
     <li class="nav-item active">
         <a class="nav-link" href="">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <i class="fas fa-fw fa-tools"></i>
             <span>Pengaturan</span></a>
     </li>
 
     <li class="nav-item active">
         <a class="nav-link" href="">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <i class="fas fa-fw fa-key"></i>
             <span>Logout</span></a>
     </li>
 

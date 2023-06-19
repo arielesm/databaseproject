@@ -16,7 +16,6 @@
     table {
         border-collapse: collapse;
         width: 100%;
-      
     }
 
     th, td {
@@ -62,7 +61,7 @@
     }
 
     .fp-filename {
-        width: 550px;
+        width: 400px;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
@@ -76,7 +75,7 @@
 
 <div class="container-fluid">
     <div class="d-sm-flex justify-content-between align-items-center mb-4"><a class="btn btn-primary btn-sm d-none d-sm-inline-block text-primary" href="#" style="  background-color: #e9ecee;
-  font-size: 12px;
+  font-size: 16px;
 "><i class="fas fa-home fa-sm text-primary"></i>/ Pengajuan Izin Kerja Sama / View Proposal<br /></a></div>
     <div class="row">
         <div class="col-md-6 col-xl-3 mb-4">
@@ -85,11 +84,11 @@
                 <div class="card-body">
                     <div class="row align-items-center justify-content-center no-gutters">
                         <div>
-                            <div class="col text-center" style="  color: rgb(255,255,255); background-color: #5e72e3; font-size: 11px;">
+                            <div class="col text-center" style="  color: rgb(255,255,255); background-color: #5e72e3; font-size: 14px;">
                                 <span>BAB 1</span></div>
-                            <div class="col text-center" style="  color: rgb(255,255,255); background-color: #5e72e3; font-size: 11px;">
+                            <div class="col text-center" style="  color: rgb(255,255,255); background-color: #5e72e3; font-size: 14px;">
                                 <span>PROFIL PERGURUAN</span></div>
-                            <div class="col text-center" style="  color: rgb(255,255,255); background-color: #5e72e3; font-size: 11px;">
+                            <div class="col text-center" style="  color: rgb(255,255,255); background-color: #5e72e3; font-size: 14px;">
                                 <span>TINGGI</span></div>
                         </div>
                     </div>
@@ -102,9 +101,9 @@
                 <div class="card-body">
                     <div class="row align-items-center justify-content-center no-gutters">
                         <div>
-                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 11px;">
+                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 14px;">
                                 <span>BAB 2</span></div>
-                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 11px;">
+                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 14px;">
                                 <span>DOKUMEN KERJA SAMA</span></div>
                         </div>
                     </div>
@@ -117,9 +116,9 @@
                 <div class="card-body">
                     <div class="row align-items-center justify-content-center no-gutters">
                         <div>
-                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 11px;">
+                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 14px;">
                                 <span>BAB 3</span></div>
-                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 11px;">
+                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 14px;">
                                 <span>KESIAPAN SUMBER DAYA</span></div>
                         </div>
                     </div>
@@ -132,9 +131,9 @@
                 <div class="card-body">
                     <div class="row align-items-center justify-content-center no-gutters">
                         <div>
-                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 11px;"><span>BAB 4</span></div>
-                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 11px;"><span>RENCANA PELAKSANAAN</span>
-                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 11px;"><span>KERJA SAMA</span></div>
+                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 14px;"><span>BAB 4</span></div>
+                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 14px;"><span>RENCANA PELAKSANAAN</span>
+                            <div class="col text-center" style="  color: #5e72e3; background-color: #ffffff; font-size: 14px;"><span>KERJA SAMA</span></div>
                             </div>
                         </div>
                     </div>
@@ -156,8 +155,8 @@
             @foreach ($viewbabsatu as $item)
             <div class="row">
                 <div class="col-md-6 text-nowrap" style="margin-left: 30px;">
-                    <div class="fw-bold text-xs mb-3"><span style="font-size: 16px;text-align: center;">No Berkas :  {{ $item->nama_berkas }}</span></div>
-                    <div class="fw-bold text-xs mb-3"><span style="font-size: 16px;text-align: center;">Judul Berkas : {{ $item->judul_berkas }}</span></div>
+                    <div class="fw-bold text-xs mb-3"><span style="font-size: 16px;text-align: center;">No Berkas       :  {{ $item->nama_berkas }}</span></div>
+                    <div class="fw-bold text-xs mb-3"><span style="font-size: 16px;text-align: center;">Judul Berkas    : {{ $item->judul_berkas }}</span></div>
                 </div>
             </div>
             @endforeach
@@ -206,6 +205,7 @@
                                     
                                     <div class="mb-3">
                                         <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
+                                        {{ $item->alamat_pt }}
                                         </textarea>
                                     </div>
                                     
@@ -229,6 +229,7 @@
                                         <label for="formFile" class="form-label">Izin Operasional</label>
                                         <div class="mb-3">
                                             <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
+                                            {{ $item->izinop_text }}
                                             </textarea>
                                         </div>
                                 </tr>
@@ -241,6 +242,7 @@
                                     <td>
                                    
                                         <label for="formFile" class="form-label">Scan Izin Operasional</label>
+                                        
                                         <div class="filemanager w-100 fm-loaded">
                                                 <div class="filemanager-container card">
                                                     <div class="fm-content-wrapper">
@@ -253,7 +255,7 @@
                                                                         </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
-                                                                                <a href="{{ $item->izinop_file }}" target="_blank">{{ $item->izinop_file }}</a>
+                                                                                <a href="{{ $item->izinop_file }}" target="_blank">{{ $item->nama_pt }} - Scan Izin Operasional</a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -288,7 +290,7 @@
                                         <label for="formFile" class="form-label">Status Akreditasi Institusi</label>
                                         <div class="mb-3">
                                             <select class="form-select " aria-label="Default select example" readonly placeholder="" style="width: 200px;">
-                                            <option selected>{{ $item->negaramitra }}</option>
+                                            <option selected>{{ $item->statakreinst_text }}</option>
                                             </select>
                                         </div>
                                 </tr>
@@ -301,7 +303,31 @@
                                     <td>
                                     <div class="mb-3">
                                         <label for="formFile" class="form-label">Scan SK  Akreditasi Institusi</label>
-                                        <a href="https://drive.google.com/uc?export=download&id=1leGTx8GodQmuefpboS3NF9UNn3dcoFEI">Link Text</a>
+                                        
+                                        <div class="filemanager w-100 fm-loaded">
+                                                <div class="filemanager-container card">
+                                                    <div class="fm-content-wrapper">
+                                                        <div class="fp-content">
+                                                            <div class="fp-iconview">
+                                                                <a href="#">
+                                                                    <div class="image-container">
+                                                                        <div class="fp-thumbnail">
+                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
+                                                                        </div>
+                                                                        <div class="fp-filename-field">
+                                                                            <div class="fp-filename" link=>
+                                                                                <a href="{{ $item->statakreinst_file }}" target="_blank">{{ $item->nama_pt }} - Scan SK Akreditasi Institusi</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     </td>
                                 </tr>
@@ -332,6 +358,7 @@
                                 <tr>
                                         <div class="mb-3">
                                             <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
+                                            {{ $item->namaptmitra }}
                                             </textarea>
                                         </div>
                                 </tr>
@@ -354,6 +381,7 @@
                                     
                                         <div class="mb-3">
                                             <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
+                                            {{ $item->alamatptmitra }}
                                             </textarea>
                                         </div>
                                     
@@ -375,14 +403,7 @@
                             <tbody>
                                 <tr>
                                     <select class="form-select " aria-label="Default select example" readonly placeholder="" style="width: 800px;">
-                                    <option selected >Pilih</option>
-                                    <option value="1">Indonesia</option>
-                                    <option value="2">Jepang</option>
-                                    <option value="3">Jerman</option>
-                                    <option value="4">Inggris</option>
-                                    <option value="5">Prancis</option>
-                                    <option value="6">Malaysia</option>
-                                    <option value="7">Singapura</option>
+                                    <option selected >{{ $item->negaramitra }}</option>
                                     </select>
                                 </tr>
                             </tbody>
@@ -402,9 +423,9 @@
                             <tbody>
                                 <tr>
                                         <label for="formFile" class="form-label">Izin Operasional</label>
-                                        <div class="mb-3">
-                                        <a href="https://drive.google.com/uc?export=download&id=1leGTx8GodQmuefpboS3NF9UNn3dcoFEI">Link Text</a>
-                                        </div>
+                                        <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
+                                        {{ $item->izinopmitra_text }}
+                                        </textarea>
                                 </tr>
                             </tbody>
                         </table>
@@ -415,7 +436,31 @@
                                     <td>
                                     <div class="mb-3">
                                         <label for="formFile" class="form-label">Scan Izin Operasional</label>
-                                        <input class="form-control" type="file" readonly placeholder="" id="formFile">
+                                        
+                                        <div class="filemanager w-100 fm-loaded">
+                                                <div class="filemanager-container card">
+                                                    <div class="fm-content-wrapper">
+                                                        <div class="fp-content">
+                                                            <div class="fp-iconview">
+                                                                <a href="#">
+                                                                    <div class="image-container">
+                                                                        <div class="fp-thumbnail">
+                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
+                                                                        </div>
+                                                                        <div class="fp-filename-field">
+                                                                            <div class="fp-filename" link=>
+                                                                                <a href="{{ $item->izinopmitra_file }}" target="_blank">{{ $item->namaptmitra }} - Scan Izin Operasional</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     </td>
                                 </tr>
@@ -439,6 +484,7 @@
                                         <label for="formFile" class="form-label">Status Akreditasi Institusi</label>
                                         <div class="mb-3">
                                             <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
+                                            {{ $item->statakreinstmitra_text }}
                                             </textarea>
                                         </div>
                                 </tr>
@@ -451,8 +497,31 @@
                                     <td>
                                     <div class="mb-3">
                                         <label for="formFile" class="form-label">Scan SK  Akreditasi Institusi</label>
-                                        <a href="https://drive.google.com/uc?export=download&id=1leGTx8GodQmuefpboS3NF9UNn3dcoFEI">Link Text</a>
-                                    </div>
+                                        
+                                        <div class="filemanager w-100 fm-loaded">
+                                                <div class="filemanager-container card">
+                                                    <div class="fm-content-wrapper">
+                                                        <div class="fp-content">
+                                                            <div class="fp-iconview">
+                                                                <a href="#">
+                                                                    <div class="image-container">
+                                                                        <div class="fp-thumbnail">
+                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
+                                                                        </div>
+                                                                        <div class="fp-filename-field">
+                                                                            <div class="fp-filename" link=>
+                                                                                <a href="{{ $item->statakreinstmitra_file }}" target="_blank">{{ $item->namaptmitra }} - Scan SK Akreditasi Institusi</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </td>
                                 </tr>
                             </tbody>
@@ -474,7 +543,9 @@
                                 <tr>
                                     
                                         <div class="mb-3">
-                                        <a href="https://drive.google.com/uc?export=download&id=1leGTx8GodQmuefpboS3NF9UNn3dcoFEI">Link Text</a>
+                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
+                                            {{ $item->peringinter }}
+                                            </textarea>
                                         </div>
                                     
                                 </tr>
@@ -502,26 +573,19 @@
                         <table id="dataTable" class="table my-0">
                             <thead>
                                 <tr>
-                                    <td>PT:</td>
-                                    <td>PT.MITRA:</td>
+                                    <td>PT:{{ $item->nama_pt }}</td>
+                                    <td>PT.MITRA:{{ $item->namaptmitra }}</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
                                         <select class="form-select " aria-label="Default select example" readonly placeholder="" style="width: 200px;">
-                                        <option selected >Pilih</option>
-                                        <option value="1">Indonesia</option>
-                                        <option value="2">Jepang</option>
-                                        <option value="3">Jerman</option>
-                                        <option value="4">Inggris</option>
-                                        <option value="5">Prancis</option>
-                                        <option value="6">Malaysia</option>
-                                        <option value="7">Singapura</option>
-                                        </select>
+                                        <option selected >{{ $item->namaprodipt_select }}</option>
                                     </td>
                                     <td>
                                         <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
+                                        {{ $item->namaprodimitra_text }}
                                         </textarea>
                                     </td>
                                 </tr>
@@ -541,23 +605,20 @@
                         <table id="dataTable" class="table my-0">
                         <thead>
                                 <tr>
-                                    <td>PT:</td>
-                                    <td>PT.MITRA:</td>
+                                    <td>PT: {{ $item->nama_pt }}</td>
+                                    <td>PT.MITRA: {{ $item->namaptmitra }}</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
                                         <select class="form-select " aria-label="Default select example" readonly placeholder="" style="width: 200px;">
-                                        <option selected >Pilih</option>
-                                        <option value="1">A</option>
-                                        <option value="2">B</option>
-                                        <option value="3">C</option>
-                                        <option value="4">D</option>
+                                        <option selected>{{ $item->akreprodpt_select }}</option>
                                         </select>
                                     </td>
                                     <td>
                                         <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
+                                        {{ $item->akreprodmitra_text }}
                                         </textarea>
                                     </td>
                                 </tr>
@@ -577,8 +638,8 @@
                         <table id="dataTable" class="table my-0">
                             <thead>
                                 <tr>
-                                    <td>PT:</td>
-                                    <td>PT.MITRA:</td>
+                                    <td>PT: {{ $item->nama_pt }}</td>
+                                    <td>PT.MITRA: {{ $item->namaptmitra }}</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -586,13 +647,59 @@
                                     <td>
                                         <div class="mb-3">
                                             <label for="formFile" class="form-label">Scan SK  Akreditasi Prodi</label>
-                                            <a href="https://drive.google.com/uc?export=download&id=1leGTx8GodQmuefpboS3NF9UNn3dcoFEI">Link Text</a>
+                                            
+                                            <div class="filemanager w-100 fm-loaded">
+                                                <div class="filemanager-container card">
+                                                    <div class="fm-content-wrapper">
+                                                        <div class="fp-content">
+                                                            <div class="fp-iconview">
+                                                                <a href="#">
+                                                                    <div class="image-container">
+                                                                        <div class="fp-thumbnail">
+                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
+                                                                        </div>
+                                                                        <div class="fp-filename-field">
+                                                                            <div class="fp-filename" link=>
+                                                                                <a href="{{ $item->sk_akprodpt_file }}" target="_blank">{{ $item->nama_pt }} - Scan SK Akreditasi Prodi</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                      
                                         </div>
                                     </td>
                                     <td>
                                         <div class="mb-3">
                                             <label for="formFile" class="form-label">Scan SK  Akreditasi Prodi</label>
-                                            <a href="https://drive.google.com/uc?export=download&id=1leGTx8GodQmuefpboS3NF9UNn3dcoFEI">Link Text</a>
+                                            
+                                            <div class="filemanager w-100 fm-loaded">
+                                                <div class="filemanager-container card">
+                                                    <div class="fm-content-wrapper">
+                                                        <div class="fp-content">
+                                                            <div class="fp-iconview">
+                                                                <a href="#">
+                                                                    <div class="image-container">
+                                                                        <div class="fp-thumbnail">
+                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
+                                                                        </div>
+                                                                        <div class="fp-filename-field">
+                                                                            <div class="fp-filename" link=>
+                                                                                <a href="{{ $item->sk_akprodmitra_file }}" target="_blank">{{ $item->namaptmitra }} - Scan SK Akreditasi Prodi</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>    
                                     </td>
                                 </tr>
@@ -613,8 +720,8 @@
                         <table id="dataTable" class="table my-0">
                             <thead>
                                 <tr>
-                                    <td>PT:</td>
-                                    <td>PT.MITRA:</td>
+                                    <td>PT: {{ $item->nama_pt }}</td>
+                                    <td>PT.MITRA: {{ $item->namaptmitra }}</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -622,13 +729,59 @@
                                     <td>
                                         <div class="mb-3">
                                             <label for="formFile" class="form-label">Scan Izin Operasional Prodi</label>
-                                            <a href="https://drive.google.com/uc?export=download&id=1leGTx8GodQmuefpboS3NF9UNn3dcoFEI">Link Text</a>
+                                            
+                                            <div class="filemanager w-100 fm-loaded">
+                                                <div class="filemanager-container card">
+                                                    <div class="fm-content-wrapper">
+                                                        <div class="fp-content">
+                                                            <div class="fp-iconview">
+                                                                <a href="#">
+                                                                    <div class="image-container">
+                                                                        <div class="fp-thumbnail">
+                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
+                                                                        </div>
+                                                                        <div class="fp-filename-field">
+                                                                            <div class="fp-filename" link=>
+                                                                                <a href="{{ $item->izopeprodipt_file }}" target="_blank">{{ $item->nama_pt }} - Scan Izin Operasional Prodi</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
                                         </div>
                                     </td>
                                     <td>
                                         <div class="mb-3">
                                             <label for="formFile" class="form-label">Scan Izin Operasional Prodi</label>
-                                            <a href="https://drive.google.com/uc?export=download&id=1leGTx8GodQmuefpboS3NF9UNn3dcoFEI">Link Text</a>
+                                            
+                                            <div class="filemanager w-100 fm-loaded">
+                                                <div class="filemanager-container card">
+                                                    <div class="fm-content-wrapper">
+                                                        <div class="fp-content">
+                                                            <div class="fp-iconview">
+                                                                <a href="#">
+                                                                    <div class="image-container">
+                                                                        <div class="fp-thumbnail">
+                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
+                                                                        </div>
+                                                                        <div class="fp-filename-field">
+                                                                            <div class="fp-filename" link=>
+                                                                                <a href="{{ $item->izopeprodimitra_file }}" target="_blank">{{ $item->namaptmitra }} - Scan Izin Operasional Prodi</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>    
                                     </td>
                                 </tr>
@@ -658,8 +811,29 @@
                         <table id="dataTable" class="table my-0">
                             <tbody>
                                 <tr>
-                                        <div class="mb-3">
-                                        <a href="https://drive.google.com/uc?export=download&id=1leGTx8GodQmuefpboS3NF9UNn3dcoFEI">Link Text</a>
+                                        
+                                        <div class="filemanager w-100 fm-loaded">
+                                                <div class="filemanager-container card">
+                                                    <div class="fm-content-wrapper">
+                                                        <div class="fp-content">
+                                                            <div class="fp-iconview">
+                                                                <a href="#">
+                                                                    <div class="image-container">
+                                                                        <div class="fp-thumbnail">
+                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
+                                                                        </div>
+                                                                        <div class="fp-filename-field">
+                                                                            <div class="fp-filename" link=>
+                                                                                <a href="{{ $item->proposalusul_file }}" target="_blank">Proposal Usulan Kerja Sama</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
                                         </div>
                                 </tr>
                             </tbody>
@@ -672,20 +846,16 @@
 
 
             <div class="col-xl-12" style="padding-right: 43px;">
-                <a class="btn btn-success btn-icon-split" role="button" style="margin-left: 1340px;background: #172b4c;">
+                <a class="btn btn-success btn-icon-split" role="button" style="margin-left: 1440px;background: #172b4c;">
                     <span class="text-white text">Kembali</span>
                 </a>
-                <a class="btn btn-success btn-icon-split" role="button" style="margin-left: 1435px;margin-top: -38px;margin-bottom: 38px;">
+                <a class="btn btn-success btn-icon-split" role="button" style="margin-left: 1535px;margin-top: -38px;margin-bottom: 38px;">
                     <span class="text-white text" style="padding-right: 14px;">Lanjutkan</span>
                 </a>
             </div>
         </div>
     </div>
-    <footer class="bg-white sticky-footer"><span style="font-size: 10px;">&nbsp; &nbsp; &nbsp; &nbsp;© 2023 Direktorat Jenderal Pendidikan TInggi, Riset, dan Teknologi</span>
-            <div class="container my-auto">
-                <div class="text-center my-auto copyright"></div>
-            </div>
-    </footer>
+    
 </div>
 </div>
 </div>

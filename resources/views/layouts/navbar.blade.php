@@ -17,7 +17,7 @@
             <ul class="nav navbar-nav flex-nowrap ml-auto">
             <li role="presentation" class="nav-item dropdown no-arrow">
                 <div class="nav-item dropdown no-arrow"><a data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle nav-link" href="#" style="color: rgb(255,255,255);"><img class="img-profile rounded-circle"
-                src="img/undraw_profile.svg"><span class="d-none d-lg-inline mr-2 text-gray-600 small">developer</span></a>
+                src="img/undraw_profile.svg"><span class="d-none d-lg-inline mr-2 text-gray-600 small">17th database team</span></a>
                     <div
                         role="menu" class="dropdown-menu shadow dropdown-menu-right animated--grow-in"><a role="presentation" class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Profile</a><a role="presentation" class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> Settings</a>
                         <a

@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('barang', function (Blueprint $table) {
+        Schema::create('viewbabsatu', function (Blueprint $table) {
             $table->id();
-            $table->string('kode_barang')->nullable();
-            $table->string('nama_barang')->nullable();
-            $table->string('kategori_barang')->nullable();
-            $table->integer('harga')->nullable();
-            $table->integer('jumlah')->nullable();
+            $table->text('')->nullable();
+            $table->text('')->nullable();
+            $table->text('')->nullable();
+            $table->text('')->nullable();
+            $table->text('')->nullable();
             $table->timestamps();
         });
     }
