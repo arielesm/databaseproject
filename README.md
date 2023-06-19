@@ -1,3 +1,6 @@
-Aplikasi Kerja Sama Dikti
-
-Laravel 10
+Aplikasi Kerja Sama Dikti : 
+    Role Universitas 
+    Menu 
+    Pengajuan Izin Kerja Sama 
+    View Proposal 
+    Tab View Bab 1
