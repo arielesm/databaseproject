@@ -1,0 +1,46 @@
+cd /xampp/htdocs
+
+git clone https://github.com/arielesm/databaseproject.git
+
+cd databaseproject
+
+composer install (cek dulu)
+
+php artisan migrate
+
+***pilih*** yes (hapus database dulu)
+
+code .
+
+php artisan serve
+
+
+data
+2305140001.1
+Gelar Ganda(Double Degree) Universitas Halu Oleo S2 Peternakan dengan PT.ABC Peternakan ITB
+Universitas Halu Oleo
+Kampus Bumi Tridharma Anduonohu, Jalan.H.E. Mokodompit, Kodya Kendari, Sulawesi, Kota Kendari, Prov.Sulawesi Tenggara
+Izin Opera
+file izin
+B (Baik Sekali)
+file akreditasi
+Institut Teknologi Bandung
+Kampus Jatinangor Jl. Let. Jend. Purn. Dr. (HC) Mashudi No.1, Kec.Jatinangor, Kab.Sumedang, Prov.Jawa Barat
+Indonesia
+Izin Opersional mitra
+file izin
+A (Unggul)
+file akreditasi
+235 di dunia berdasarkan QS World
+S2 Peternakan
+S2 Teknik Elektro
+B (Baik Sekali)
+A (Unggul)
+file akre prodi
+file akre prodi mitra
+file izin prodi
+file izin prodi mitra
+file proposal
+
+
+
