@@ -88,13 +88,13 @@ class ViewbabsatuController extends Controller
             'proposalusul_file' => $request->proposalusul_file,
         ];
 
-        $barang = Barang::find($id)->update($data);
+        $viewbabsatu = Viewbabsatu::find($id)->update($data);
 
         return redirect()->route('viewbabsatu');
     }
 
     public function hapus($id){
-        Barang::find($id)->delete();
+        Viewbabsatu::find($id)->delete();
         return redirect()->route('viewbabsatu');
     }
 }
