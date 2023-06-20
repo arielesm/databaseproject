@@ -14,9 +14,14 @@ code .
 
 php artisan serve
 
-
+*update baru
 pdf ada di https://drive.google.com/file/d/1MlMBW1UrIaGuacYfjA6rDdpW2ao9Q9sE/view?usp=sharing
 letakkan di public
+
+letakan logo.png ada di public/img (logo pdf)
+
+ganti query di sql
+ganti index.blade.php di resources
 
 
 data
