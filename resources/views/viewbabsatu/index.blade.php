@@ -390,7 +390,7 @@
                         <table id="dataTable" class="table my-0">
                             <tbody>
                                 <tr>
-                                    <select class="form-select " aria-label="Default select example" readonly placeholder="" style="width: 800px;">
+                                    <select class="form-select " aria-label="Default select example" readonly placeholder="" style="width: 500px;">
                                     <option selected >{{ $item->negaramitra }}</option>
                                     </select>
                                 </tr>
@@ -549,7 +549,7 @@
             </body>
 
             @foreach ($viewbabsatu as $item)
-            <div class="row" style="background-color: lightgreen; height: 100px; margin-right:0px; margin-left: 0px;">
+            <div class="row" style="background-color: lightgreen; margin-right:0px; margin-left: 0px;">
                 <div class="col-md-6 col-xl-5 align-self-top"><span style="text-align: left;">Nama Prodi</span><span style="text-align: left; color: red;">*</span></div>
                 <div class="col-md-6 col-xl-7">
                     <div id="dataTable" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
@@ -581,7 +581,7 @@
             @endforeach
 
             @foreach ($viewbabsatu as $item)
-            <div class="row" style="background-color: lightgreen;">
+            <div class="row" style="background-color: lightgreen; margin-right:0px; margin-left: 0px;">
                 <div class="col-md-6 col-xl-5 align-self-top"><span style="text-align: right;">Akreditasi Prodi</span><span style="text-align: left; color: red;">*</span></div>
                 <div class="col-md-6 col-xl-7">
                     <div id="dataTable" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
