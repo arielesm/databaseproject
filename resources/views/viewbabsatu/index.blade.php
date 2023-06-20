@@ -800,14 +800,14 @@
                                                     <div class="fm-content-wrapper">
                                                         <div class="fp-content">
                                                             <div class="fp-iconview">
-                                                            <a href="{{asset ($item->proposal_file)}}" target="_blank">
+                                                            <a href="{{asset ($item->proposalusul_file)}}" target="_blank">
                                                                         <div class="image-container">
                                                                             <div class="fp-thumbnail">
-                                                                                <img src="/img/logo.png" href="{{ $item->proposal_file }}">
+                                                                                <img src="/img/logo.png" href="{{ $item->proposalusul_file }}">
                                                                             </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
-                                                                                <a href="{{ $item->proposal_file }}" target="_blank">Proposal Usulan Kerja Sama</a>
+                                                                                <a href="{{ $item->proposalusul_file }}" target="_blank">Proposal Usulan Kerja Sama</a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
