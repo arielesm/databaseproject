@@ -15,6 +15,10 @@ code .
 php artisan serve
 
 
+pdf ada di https://drive.google.com/file/d/1MlMBW1UrIaGuacYfjA6rDdpW2ao9Q9sE/view?usp=sharing
+letakkan di public
+
+
 data
 2305140001.1
 Gelar Ganda(Double Degree) Universitas Halu Oleo S2 Peternakan dengan PT.ABC Peternakan ITB
