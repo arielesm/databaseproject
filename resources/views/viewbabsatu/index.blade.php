@@ -179,10 +179,8 @@
                             <tbody>
                                 <tr>
                                     
-                                        <div class="mb-3">
-                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" >
-                                            {{ $item->nama_pt }}
-                                            </textarea>
+                                        <div class="mb-3" style="text-align:left;">
+                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" >{{ $item->nama_pt }}</textarea>
                                         </div>
                                     
                                 </tr>
@@ -203,10 +201,8 @@
                             <tbody>
                                 <tr>
                                     
-                                    <div class="mb-3">
-                                        <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
-                                        {{ $item->alamat_pt }}
-                                        </textarea>
+                                    <div class="mb-3"style="text-align:left;">
+                                        <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="">{{ $item->alamat_pt }}</textarea>
                                     </div>
                                     
                                 </tr>
@@ -227,10 +223,8 @@
                             <tbody>
                                 <tr>
                                         <label for="formFile" class="form-label">Izin Operasional</label>
-                                        <div class="mb-3">
-                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
-                                            {{ $item->izinop_text }}
-                                            </textarea>
+                                        <div class="mb-3"style="text-align:left;">
+                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="">{{ $item->izinop_text }}</textarea>
                                         </div>
                                 </tr>
                             </tbody>
@@ -356,10 +350,8 @@
                         <table id="dataTable" class="table my-0">
                             <tbody>
                                 <tr>
-                                        <div class="mb-3">
-                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
-                                            {{ $item->namaptmitra }}
-                                            </textarea>
+                                        <div class="mb-3"style="text-align:left;">
+                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="">{{ $item->namaptmitra }}</textarea>
                                         </div>
                                 </tr>
                             </tbody>
@@ -379,10 +371,8 @@
                             <tbody>
                                 <tr>
                                     
-                                        <div class="mb-3">
-                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
-                                            {{ $item->alamatptmitra }}
-                                            </textarea>
+                                        <div class="mb-3"style="text-align:left;">
+                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="">{{ $item->alamatptmitra }}</textarea>
                                         </div>
                                     
                                 </tr>
@@ -423,9 +413,7 @@
                             <tbody>
                                 <tr>
                                         <label for="formFile" class="form-label">Izin Operasional</label>
-                                        <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
-                                        {{ $item->izinopmitra_text }}
-                                        </textarea>
+                                        <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="">{{ $item->izinopmitra_text }}</textarea>
                                 </tr>
                             </tbody>
                         </table>
@@ -482,10 +470,8 @@
                             <tbody>
                                 <tr>
                                         <label for="formFile" class="form-label">Status Akreditasi Institusi</label>
-                                        <div class="mb-3">
-                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
-                                            {{ $item->statakreinstmitra_text }}
-                                            </textarea>
+                                        <div class="mb-3"style="text-align:left;">
+                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="">{{ $item->statakreinstmitra_text }}</textarea>
                                         </div>
                                 </tr>
                             </tbody>
@@ -542,10 +528,8 @@
                             <tbody>
                                 <tr>
                                     
-                                        <div class="mb-3">
-                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
-                                            {{ $item->peringinter }}
-                                            </textarea>
+                                        <div class="mb-3"style="text-align:left;">
+                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="">{{ $item->peringinter }}</textarea>
                                         </div>
                                     
                                 </tr>
@@ -584,9 +568,9 @@
                                         <option selected >{{ $item->namaprodipt_select }}</option>
                                     </td>
                                     <td>
-                                        <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
-                                        {{ $item->namaprodimitra_text }}
-                                        </textarea>
+                                        <div class="mb-3"style="text-align:left;">
+                                        <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="">{{ $item->namaprodimitra_text }}</textarea>
+                                        </div>                                    
                                     </td>
                                 </tr>
                             </tbody>
@@ -617,9 +601,9 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" style="padding-top: 50px;">
-                                        {{ $item->akreprodmitra_text }}
-                                        </textarea>
+                                        <div class="mb-3"style="text-align:left;">
+                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="">{{ $item->akreprodmitra_text }}</textarea>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
