@@ -61,7 +61,7 @@
     }
 
     .fp-filename {
-        width: 400px;
+        width: 300px;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
@@ -846,10 +846,10 @@
 
 
             <div class="col-xl-12" style="padding-right: 43px;">
-                <a class="btn btn-success btn-icon-split" role="button" style="margin-left: 1440px;background: #172b4c;">
+                <a class="btn btn-success btn-icon-split" role="button" style="margin-left: 1140px;background: #172b4c;">
                     <span class="text-white text">Kembali</span>
                 </a>
-                <a class="btn btn-success btn-icon-split" role="button" style="margin-left: 1535px;margin-top: -38px;margin-bottom: 38px;">
+                <a class="btn btn-success btn-icon-split" role="button" style="margin-left: 1235px;margin-top: -38px;margin-bottom: 38px;">
                     <span class="text-white text" style="padding-right: 14px;">Lanjutkan</span>
                 </a>
             </div>
