@@ -171,18 +171,16 @@
             </body>
 
             @foreach ($viewbabsatu as $item)
-            <div class="row" style="background-color: lightgreen;">
-                <div class="col-md-6 col-xl-5 align-self-top"><span style="text-align: left; padding: 5px;">Nama PT</span><span style="text-align: left; color: red;">*</span></div>
-                <div class="col-md-6 col-xl-7" > 
+            <div class="row" style="background-color: lightgreen; height: 100px; margin-right:0px; margin-left: 0px;">
+                <div class="col-md-5 col-xl-5 align-self-top"><span style="text-align: left; padding: 5px;">Nama PT</span><span style="text-align: left; color: red;">*</span></div>
+                <div class="col-md-5 col-xl-7" > 
                     <div id="dataTable" class="table-responsive table mt-2"  role="grid" aria-describedby="dataTable_info">
                         <table id="dataTable" class="table my-0" >
                             <tbody>
                                 <tr>
-                                    
-                                        <div class="mb-3" style="text-align:left;">
-                                            <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" >{{ $item->nama_pt }}</textarea>
-                                        </div>
-                                    
+                                    <div class="mb-3" style="text-align:left;">
+                                        <textarea class="bg-light form-control border-0 small" type="text" readonly placeholder="" >{{ $item->nama_pt }}</textarea>
+                                    </div>
                                 </tr>
                             </tbody>
                         </table>
@@ -193,7 +191,7 @@
             @endforeach
 
             @foreach ($viewbabsatu as $item)
-            <div class="row" style="background-color: lightgreen;">
+            <div class="row" style="background-color: lightgreen; height: 100px; margin-right:0px; margin-left: 0px;">
                 <div class="col-md-6 col-xl-5 align-self-top"><span style="text-align: right;">Alamat PT</span><span style="text-align: left; color: red;">*</span></div>
                 <div class="col-md-6 col-xl-7">
                     <div id="dataTable" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
@@ -242,11 +240,11 @@
                                                     <div class="fm-content-wrapper">
                                                         <div class="fp-content">
                                                             <div class="fp-iconview">
-                                                                <a href="#">
-                                                                    <div class="image-container">
-                                                                        <div class="fp-thumbnail">
-                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
-                                                                        </div>
+                                                            <a href="{{asset ($item->izinop_file)}}" target="_blank">
+                                                                        <div class="image-container">
+                                                                            <div class="fp-thumbnail">
+                                                                                <img src="/img/logo.png" href="{{ $item->izinop_file }}">
+                                                                            </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
                                                                                 <a href="{{ $item->izinop_file }}" target="_blank">{{ $item->nama_pt }} - Scan Izin Operasional</a>
@@ -303,11 +301,11 @@
                                                     <div class="fm-content-wrapper">
                                                         <div class="fp-content">
                                                             <div class="fp-iconview">
-                                                                <a href="#">
-                                                                    <div class="image-container">
-                                                                        <div class="fp-thumbnail">
-                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
-                                                                        </div>
+                                                                <a href="{{asset ($item->statakreinst_file)}}" target="_blank">
+                                                                        <div class="image-container">
+                                                                            <div class="fp-thumbnail">
+                                                                                <img src="/img/logo.png" href="{{ $item->statakreinst_file }}">
+                                                                            </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
                                                                                 <a href="{{ $item->statakreinst_file }}" target="_blank">{{ $item->nama_pt }} - Scan SK Akreditasi Institusi</a>
@@ -343,7 +341,7 @@
             </body>
 
             @foreach ($viewbabsatu as $item)
-            <div class="row" style="background-color: lightgreen;">
+            <div class="row" style="background-color: lightgreen; height: 100px; margin-right:0px; margin-left: 0px;">
                 <div class="col-md-6 col-xl-5 align-self-top"><span style="text-align: left;">Nama PT</span><span style="text-align: left; color: red;">*</span></div>
                 <div class="col-md-6 col-xl-7">
                     <div id="dataTable" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
@@ -385,7 +383,7 @@
             @endforeach
 
             @foreach ($viewbabsatu as $item)
-            <div class="row" style="background-color: lightgreen;">
+            <div class="row" style="background-color: lightgreen; height: 100px; margin-right:0px; margin-left: 0px;">
                 <div class="col-md-6 col-xl-5 align-self-top"><span style="text-align: left;">Negara</span></div>
                 <div class="col-md-6 col-xl-7">
                     <div id="dataTable" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
@@ -430,11 +428,11 @@
                                                     <div class="fm-content-wrapper">
                                                         <div class="fp-content">
                                                             <div class="fp-iconview">
-                                                                <a href="#">
-                                                                    <div class="image-container">
-                                                                        <div class="fp-thumbnail">
-                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
-                                                                        </div>
+                                                                <a href="{{asset ($item->izinopmitra_file)}}" target="_blank">
+                                                                        <div class="image-container">
+                                                                            <div class="fp-thumbnail">
+                                                                                <img src="/img/logo.png" href="{{ $item->izinopmitra_file }}">
+                                                                            </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
                                                                                 <a href="{{ $item->izinopmitra_file }}" target="_blank">{{ $item->namaptmitra }} - Scan Izin Operasional</a>
@@ -490,10 +488,11 @@
                                                         <div class="fp-content">
                                                             <div class="fp-iconview">
                                                                 <a href="#">
-                                                                    <div class="image-container">
-                                                                        <div class="fp-thumbnail">
-                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
-                                                                        </div>
+                                                                    <a href="{{asset ($item->statakreinstmitra_file)}}" target="_blank">
+                                                                        <div class="image-container">
+                                                                            <div class="fp-thumbnail">
+                                                                                <img src="/img/logo.png" href="{{ $item->statakreinstmitra_file }}">
+                                                                            </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
                                                                                 <a href="{{ $item->statakreinstmitra_file }}" target="_blank">{{ $item->namaptmitra }} - Scan SK Akreditasi Institusi</a>
@@ -550,7 +549,7 @@
             </body>
 
             @foreach ($viewbabsatu as $item)
-            <div class="row" style="background-color: lightgreen;">
+            <div class="row" style="background-color: lightgreen; height: 100px; margin-right:0px; margin-left: 0px;">
                 <div class="col-md-6 col-xl-5 align-self-top"><span style="text-align: left;">Nama Prodi</span><span style="text-align: left; color: red;">*</span></div>
                 <div class="col-md-6 col-xl-7">
                     <div id="dataTable" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
@@ -637,11 +636,11 @@
                                                     <div class="fm-content-wrapper">
                                                         <div class="fp-content">
                                                             <div class="fp-iconview">
-                                                                <a href="#">
-                                                                    <div class="image-container">
-                                                                        <div class="fp-thumbnail">
-                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
-                                                                        </div>
+                                                                <a href="{{asset ($item->sk_akprodpt_file)}}" target="_blank">
+                                                                        <div class="image-container">
+                                                                            <div class="fp-thumbnail">
+                                                                                <img src="/img/logo.png" href="{{ $item->sk_akprodpt_file }}">
+                                                                            </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
                                                                                 <a href="{{ $item->sk_akprodpt_file }}" target="_blank">{{ $item->nama_pt }} - Scan SK Akreditasi Prodi</a>
@@ -666,11 +665,11 @@
                                                     <div class="fm-content-wrapper">
                                                         <div class="fp-content">
                                                             <div class="fp-iconview">
-                                                                <a href="#">
-                                                                    <div class="image-container">
-                                                                        <div class="fp-thumbnail">
-                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
-                                                                        </div>
+                                                                <a href="{{asset ($item->sk_akprodmitra_file)}}" target="_blank">
+                                                                        <div class="image-container">
+                                                                            <div class="fp-thumbnail">
+                                                                                <img src="/img/logo.png" href="{{ $item->sk_akprodmitra_file }}">
+                                                                            </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
                                                                                 <a href="{{ $item->sk_akprodmitra_file }}" target="_blank">{{ $item->namaptmitra }} - Scan SK Akreditasi Prodi</a>
@@ -719,11 +718,11 @@
                                                     <div class="fm-content-wrapper">
                                                         <div class="fp-content">
                                                             <div class="fp-iconview">
-                                                                <a href="#">
-                                                                    <div class="image-container">
-                                                                        <div class="fp-thumbnail">
-                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
-                                                                        </div>
+                                                                <a href="{{asset ($item->izopeprodipt_file)}}" target="_blank">
+                                                                        <div class="image-container">
+                                                                            <div class="fp-thumbnail">
+                                                                                <img src="/img/logo.png" href="{{ $item->izopeprodipt_file }}">
+                                                                            </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
                                                                                 <a href="{{ $item->izopeprodipt_file }}" target="_blank">{{ $item->nama_pt }} - Scan Izin Operasional Prodi</a>
@@ -748,11 +747,11 @@
                                                     <div class="fm-content-wrapper">
                                                         <div class="fp-content">
                                                             <div class="fp-iconview">
-                                                                <a href="#">
-                                                                    <div class="image-container">
-                                                                        <div class="fp-thumbnail">
-                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
-                                                                        </div>
+                                                                <a href="{{asset ($item->izopeprodimitra_file)}}" target="_blank">
+                                                                        <div class="image-container">
+                                                                            <div class="fp-thumbnail">
+                                                                                <img src="/img/logo.png" href="{{ $item->izopeprodimitra_file }}">
+                                                                            </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
                                                                                 <a href="{{ $item->izopeprodimitra_file }}" target="_blank">{{ $item->namaptmitra }} - Scan Izin Operasional Prodi</a>
@@ -801,14 +800,14 @@
                                                     <div class="fm-content-wrapper">
                                                         <div class="fp-content">
                                                             <div class="fp-iconview">
-                                                                <a href="#">
-                                                                    <div class="image-container">
-                                                                        <div class="fp-thumbnail">
-                                                                            <img src="https://spada.untirta.ac.id/theme/image.php/klass/core/1659283779/f/pdf-80">
-                                                                        </div>
+                                                            <a href="{{asset ($item->proposal_file)}}" target="_blank">
+                                                                        <div class="image-container">
+                                                                            <div class="fp-thumbnail">
+                                                                                <img src="/img/logo.png" href="{{ $item->proposal_file }}">
+                                                                            </div>
                                                                         <div class="fp-filename-field">
                                                                             <div class="fp-filename" link=>
-                                                                                <a href="{{ $item->proposalusul_file }}" target="_blank">Proposal Usulan Kerja Sama</a>
+                                                                                <a href="{{ $item->proposal_file }}" target="_blank">Proposal Usulan Kerja Sama</a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
